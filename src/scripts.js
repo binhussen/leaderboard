@@ -2,16 +2,14 @@
 
 import './styles.css';
 
-// const scoresEl = document.querySelector('.scores');
+const scoresEl = document.querySelector('.scores');
 const nameEl = document.querySelector('.name');
 const scoreEl = document.querySelector('.score');
 const submitEl = document.querySelector('.btn-submit');
+const refreshEl = document.querySelector('.btn-refresh');
+
 const API_URL =
 	'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ze1TjZFGUQAXVEhzCJJJ/scores/';
-
-// scores.forEach(({ name, score }) => {
-// 	scoresEl.innerHTML += `<li class="score">${name} : ${score}</li>`;
-// });s
 
 const addScore = async (event) => {
 	event.preventDefault();
@@ -30,4 +28,21 @@ const postGame = async (score) => {
 	});
 };
 
+const getGame = async () => {
+	const fetchGame = await fetch(API_URL);
+	const data = await fetchGame.json();
+	renderScores(data.result);
+};
+
+const renderScores = async () => {
+	const fetchPro = await fetch(API_URL);
+	const data = await fetchPro.json();
+
+	scoresEl.innerHTML = '';
+	data.result.forEach(({ user, score }) => {
+		scoresEl.innerHTML += `<li class="score__list">${user} : ${score}</li>`;
+	});
+};
+
 submitEl.addEventListener('click', addScore);
+refreshEl.addEventListener('click', renderScores);
