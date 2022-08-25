@@ -5,94 +5,94 @@
 *,
 ::after,
 ::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
-	--color-primary: #55c57a;
-	--color-primary-dark: #28b485;
-	--color-primary-light: #7ed56f;
-	--color-grey-dark: #777;
-	--color-white: #fff;
-	--color-black: #000;
+  --color-primary: #55c57a;
+  --color-primary-dark: #28b485;
+  --color-primary-light: #7ed56f;
+  --color-grey-dark: #777;
+  --color-white: #fff;
+  --color-black: #000;
 }
 
 body {
-	background: #f7f7f7;
-	margin: 3rem;
+  background: #f7f7f7;
+  margin: 3rem;
 }
 
 .header {
-	margin: 3rem auto;
+  margin: 3rem auto;
 }
 
 .heading-primary {
-	font-size: 3rem;
-	font-weight: 400;
-	text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .main {
-	display: flex;
-	justify-content: center;
-	gap: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .section-score__head {
-	display: flex;
-	flex-direction: row;
-	gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .btn {
-	text-decoration: none;
-	padding: 0.5rem 2rem;
-	display: inline-block;
-	border-radius: 10rem;
-	background: var(--color-primary);
-	color: var(--color-white);
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn:hover {
-	transform: translateY(-0.3rem);
-	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .section-score__content {
-	border-radius: 1px;
-	outline: 0.25rem solid var(--color-primary);
-	padding: 1rem 0;
-	margin: 2rem 0;
+  border-radius: 1px;
+  outline: 0.25rem solid var(--color-primary);
+  padding: 1rem 0;
+  margin: 2rem 0;
 }
 
 .score__list {
-	list-style: none;
-	padding: 0.5rem;
+  list-style: none;
+  padding: 0.5rem;
 }
 
 .score__list:nth-child(even) {
-	background: var(--color-primary-light);
+  background: var(--color-primary-light);
 }
 
 .score__list:nth-child(odd) {
-	background: var(--color-white);
+  background: var(--color-white);
 }
 
 .form {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 input {
-	width: 80%;
-	padding: 1rem;
-	border: 1px solid var(--color-primary);
-	border-radius: 5px;
-	margin: 0.25rem;
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  margin: 0.25rem;
 }
 
 .footer {
-	text-align: center;
+  text-align: center;
 }
