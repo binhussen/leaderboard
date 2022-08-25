@@ -1,0 +1,27 @@
+{
+	"name": "leaderboard",
+	"version": "1.0.0",
+	"description": "",
+	"main": "webpack.config.js",
+	"scripts": {
+		"test": "jest --coverage",
+		"watch": "webpack --watch",
+		"start": "webpack serve --open",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/binhussen/leaderboard.git"
+	},
+	"author": "binhussen",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/binhussen/leaderboard/issues"
+	},
+	"homepage": "https://github.com/binhussen/leaderboard#readme",
+	"devDependencies": {
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.9.3"
+	}
+}
