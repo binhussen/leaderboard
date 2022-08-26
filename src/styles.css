@@ -68,16 +68,16 @@ body {
   margin: 2rem 0;
 }
 
-.score {
+.score__list {
   list-style: none;
   padding: 0.5rem;
 }
 
-.score:nth-child(even) {
+.score__list:nth-child(even) {
   background: var(--color-primary-light);
 }
 
-.score:nth-child(odd) {
+.score__list:nth-child(odd) {
   background: var(--color-white);
 }
 
