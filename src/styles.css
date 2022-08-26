@@ -61,6 +61,10 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
+.btn-submit {
+  margin: 0.5rem 60%;
+}
+
 .section-score__content {
   border-radius: 1px;
   outline: 0.25rem solid var(--color-primary);
